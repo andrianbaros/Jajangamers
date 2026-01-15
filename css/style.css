@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b2a66, #020617);
+  color: #ffffff;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav a {
+  color: #cbd5f5;
+  margin-left: 24px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #3b82f6;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= HERO ================= */
+.hero {
+  padding: 80px 0 120px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  color: #3b82f6;
+}
+
+.hero h2 {
+  margin-top: 12px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.hero p {
+  margin-top: 16px;
+  color: #cbd5f5;
+}
+
+.hero-video {
+  width: 420px;
+  height: 240px;
+  max-width: 100%;
+  background: #3f3f46;
+  border-radius: 16px;
+  margin: 32px auto;
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
+}
+
+.hero-desc span {
+  color: #60a5fa;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 16px 28px;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  border-radius: 999px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.7);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.hero-stats {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  font-size: 14px;
+  color: #dbeafe;
+}
+
+/* ================= WHY ================= */
+.why {
+  padding: 100px 0;
+}
+
+.why h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.why h2 span {
+  color: #3b82f6;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 12px;
+  color: #cbd5f5;
+}
+
+.subtitle span {
+  color: #60a5fa;
+}
+
+/* ================= FEATURES ================= */
+.features {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feature-card {
+  background: #374151;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+  flex: 1;
+  min-width: 180px;
+}
+
+.feature-card .icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.feature-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+/* ================= CALCULATOR ================= */
+.calculator {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.calc-form,
+.calc-result {
+  background: #374151;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 0 35px rgba(59, 130, 246, 0.6);
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #4b5563;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #2563eb;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+input[type="number"],
+input[type="range"] {
+  width: 100%;
+  margin-top: 6px;
+}
+
+#qtyVal {
+  float: right;
+  font-size: 14px;
+}
+
+/* ================= RESULT ================= */
+.calc-result {
+  text-align: center;
+}
+
+.profit {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.bonus {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #e5e7eb;
+  margin-bottom: 10px;
+}
+
+.extra {
+  color: #93c5fd;
+  margin-bottom: 16px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .why {
+    padding: 80px 0;
+  }
+
+  .why h2 {
+    font-size: 28px;
+  }
+
+  .features {
+    flex-wrap: wrap;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .navbar .container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navbar nav a {
+    margin: 0 10px;
+  }
+
+  .hero {
+    padding: 60px 0 80px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 14px 0;
+  }
+
+  .why {
+    padding: 60px 0;
+  }
+
+  .why h2 {
+    font-size: 24px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .feature-card {
+    width: 100%;
+  }
+
+  .calculator {
+    grid-template-columns: 1fr;
+  }
+}

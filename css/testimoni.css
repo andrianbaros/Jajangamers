@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav a {
+  color: #cbd5f5;
+  margin-left: 24px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #3b82f6;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b2a66, #020617);
+  color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= SECTION ================= */
+.testimoni {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.testimoni h2 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 12px;
+  color: #cbd5f5;
+  font-size: 15px;
+}
+
+/* ================= CARDS ================= */
+.testimoni-cards {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.testimoni-card {
+  background: #4b5563;
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 0 35px rgba(59, 130, 246, 0.5);
+  text-align: left;
+}
+
+.thumb {
+  height: 160px;
+  background: #6b7280;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.quote {
+  font-size: 13px;
+  color: #f1f5f9;
+  margin-bottom: 14px;
+}
+
+.author strong {
+  display: block;
+  font-size: 13px;
+}
+
+.author span {
+  font-size: 12px;
+  color: #cbd5f5;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* LAPTOP KECIL */
+@media (max-width: 1200px) {
+  .testimoni-cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .testimoni {
+    padding: 80px 0;
+  }
+
+  .testimoni h2 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .testimoni-cards {
+    gap: 20px;
+  }
+
+  .thumb {
+    height: 140px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .testimoni {
+    padding: 60px 0;
+  }
+
+  .testimoni h2 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .testimoni-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .testimoni-card {
+    padding: 16px;
+  }
+
+  .thumb {
+    height: 120px;
+    font-size: 13px;
+  }
+
+  .quote {
+    font-size: 12.5px;
+  }
+
+  /* Navbar mobile */
+  .navbar .container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navbar nav a {
+    margin: 0 10px;
+  }
+}
